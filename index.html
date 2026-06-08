@@ -42,13 +42,14 @@ nav a{
 }
 
 .hero-text{
-    max-width:500px;
+    max-width: 600px;
 }
 
 .hero-text h1{
-    font-size:72px;
-    line-height:1.1;
-    color:#3b3b6d;
+    font-size: 64px;
+    color: #000E42;
+    font-family: Poppins, Helvetica, Arial, Lucida Sans-serif;
+    font-weight: 700;
 }
 
 .hero-text p{
@@ -58,12 +59,15 @@ nav a{
 }
 
 .hero-text button{
-    background:#5b57e6;
+    background:#00208A;
     color:white;
     border:none;
     padding:15px 35px;
     border-radius:10px;
     cursor:pointer;
+    font-family: Poppins, Helvetica, Arial, Lucida Sans-serif;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 .heroimg{
@@ -76,15 +80,81 @@ nav a{
 }
 
 .second-section h2{
-    font-size:60px;
-    color:#3b3b6d;
+    font-size:42px;
+    color:#050754;
 }
 
 .logo{
     height:70px;
 }
 
+.image1{
+    width: 300px;
+    margin-top:50px;
+    height: 300px;
+    filter: grayscale(100%);
+}
 
+.image2{
+    width: 300px;
+    margin-top:50px;
+    height: 300px;
+    filter: grayscale(100%);
+    align-content: center;
+    
+}
+.image3{
+    width: 300px;
+    margin: 50px;
+    height: 300px;
+    filter: grayscale(100%);
+    
+}
+
+.second-section {
+    width: 90%;
+    margin: 50px auto;
+}
+
+.second-section h2 {
+    font-size: 42px;
+    color: #050754;
+    margin-bottom: 40px;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.container {
+    display: grid;
+    gap: 40px;
+}
+
+.images img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.item{
+    padding: 15px 0;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.item strong{
+    font-weight: bold;
+}
+
+.p{
+    color: #474747;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    font-family: Poppins, Helvetica, Arial, Lucida Sans-serif;
+}
 
 </style>
 </head>
@@ -105,17 +175,16 @@ nav a{
     </nav>
 </header>
 
-<!-- HERO SECTION -->
 <section class="hero">
 
     <div class="hero-text">
-        <h1>
+        <b><h1>
             Study to <br>
             become a <br>
             global talent
-        </h1>
+        </h1></b>
 
-        <p>
+        <p class="p">
             Learn new tech skills using a world-class curriculum from top industry experts in an accredited institution.
         </p>
 
@@ -130,7 +199,54 @@ nav a{
 
 <section class="second-section">
     <h2>Start here. Change the world.</h2>
+
+    <div class="images">
+        <div class="image1">
+            <img src="college.jpg" alt="National Diploma">
+            <h3>National Diploma (ND)</h3>
+            <br>
+            The National Diploma (ND) offered at SQI College of ICT is a 2 year approved academic program of the National Board for Technical Education (NBTE) and approved by the Federal Ministry of Education.
+            <br><br><br>
+            <b><a href="#">Learn More</a></b>
+            <br><br><br><br><br><br>
+            <div class="container">
+                <div class="grid">
+                    <h3>NATIONAL DIPLOMA COURSES </h3>
+                    <div class="item"><strong>Duration:</strong> 2 Years</div>
+                    <div class="item"><strong>Certificate:</strong> Both National Diploma and Professional Diploma</div>
+                    <div class="item"><strong>Skills:</strong> Academic Institution recognized skills and In-demand professional skills.</div>
+                    <div class="item"><strong>Entry Requirements:</strong>120 min in JAMB, 5 Credits in O-Level and Your passion</div>
+                    <div class="item"><strong>Required Hardware:</strong>(usually laptop)</div>
+                    <div class="item"><strong>Direct Entry:</strong>Yes(any university)</div>
+                    <div class="item"><strong>Transcript & Internship:</strong>Yes</div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="image2">
+            <img src="prof.jpg" alt="Professional Diploma">
+            <h3 class="imagesh3">Professional Diploma Certificate</h3>
+            <br>
+            The Professional Certificate Program is 1 year practical training with wide range of edge-cutting IT certification courses offered in SQI College of ICT to people who want to advance their career.
+            <br><br><br>
+            <b><a href="#">Learn More</a></b>
+        </div>
+
+        <div class="image3">
+            <img src="certificate.jpg" alt="Certificate Program">
+            <h3>Certificate Program</h3>
+            <br>
+            The Certificate Program is a short-term training, 2 weeks to 6 months with a wide range of edge-cutting IT certification courses offered in SQI College of ICT to people who want to advance their careers.
+            <br><br><br>
+            <b><a href="#">Learn More</a></b>
+        </div>
+    </div>
 </section>
+ 
+</section>
+
+
 
 </body>
 </html>
