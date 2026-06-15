@@ -1,522 +1,608 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SQI Education</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
-
-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 10%;
-    background:#fff;
-    border-bottom: 1px solid black;
-}
-
-
-nav ul{
-    display:flex;
-    list-style:none;
-    gap:30px;
-}
-
-nav a{
-    text-decoration:none;
-    color:#333;
-}
-
-.hero{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:80px 10%;
-    min-height:80vh;
-}
-
-.hero-text{
-    max-width: 600px;
-}
-
-.hero-text h1{
-    font-size: 64px;
-    color: #000E42;
-    font-family: Poppins, Helvetica, Arial, Lucida Sans-serif;
-    font-weight: 700;
-}
-
-.hero-text p{
-    margin:25px 0;
-    color:#666;
-    line-height:1.6;
-}
-
-.hero-text button{
-    background:#00208A;
-    color:white;
-    border:none;
-    padding:15px 35px;
-    border-radius:10px;
-    cursor:pointer;
-    font-family: Poppins, Helvetica, Arial, Lucida Sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-}
-
-.heroimg{
-    width:500px;
-    max-width:100%;
-}
-
-.second-section{
-    padding:0px 10%;
-}
-
-.logo{
-    height:70px;
-}
-
-.image1{
-    width: 300px;
-    margin-top:50px;
-    height: 300px;
-    filter: grayscale(100%);
-}
-
-.image2{
-    width: 300px;
-    margin-top:50px;
-    height: 300px;
-    filter: grayscale(100%);
-    align-content: center;
-    
-}
-.image3{
-    width: 300px;
-    margin: 50px;
-    height: 300px;
-    filter: grayscale(100%);
-    
-}
-
-
-.second-section h2 {
-    font-size: 42px;
-    font-family: ArialMT, Arial Bold, Arial Black, ArialHebrew, Arial-BoldMT;
-    font-weight: 700;
-    color: #050754;
-    margin-bottom: 0;
-}
-
-.images {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
-.container {
-    display: grid;
-    gap: 40px;
-}
-
-
-.images img{
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-}
-
-.item{
-    border-bottom: 1px solid cyan;
-    padding: 15px 0;
-}
-
-.item strong{
-    font-weight: bold;
-}
-
-
-body{
-    font-family:Arial, sans-serif;
-}
-
-.top-courses{
-    max-width:1200px;
-    margin:auto;
-    padding:80px 20px;
-}
-
-.section-header h1{
-    font-size:72px;
-    font-weight:700;
-    color:#252525;
-}
-
-.section-header p{
-    margin-top:20px;
-    font-size:24px;
-    color:#555;
-}
-
-.view-courses{
-    display:inline-block;
-    margin-top:40px;
-    color:#081f6a;
-    font-weight:bold;
-}
-
-.courses-grid{
-    margin-top: 60px;
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:60px;
-}
-
-.course-card{
-    padding:50px;
-    border-radius:35px;
-}
-
-.blue-card1{
-    background:#d9edf6;
-}
-
-.yellow-card1{
-    background:#EEEFBD;
-    display:grid;
-    box-shadow: 0px 20px 30px#FFDED9;
-    border: 1px solid black;
-}
-
-.course-card img{
-    width:100%;
-    border-radius:18px;
-    display:block;
-    margin-bottom:35px;
-}
-
-.course-card h2{
-    font-size:42px;
-    line-height:1.2;
-    margin-bottom:20px;
-}
-
-.course-card span{
-    color:#ff7b00;
-}
-
-.course-card p{
-    font-size:22px;
-    line-height:1.7;
-    margin-bottom:20px;
-}
-
-.course-card a{
-    display:inline-block;
-    margin-top:20px;
-    font-weight:bold;
-    color:#081f6a;
-}
-
-.blue-card{
-    background:#E0D5C0;
-    box-shadow: 0 20px 40px rgba(186, 164, 255, 0.35);
-}
-
-.yellow-card{
-    background:#DFD5E8;
-    box-shadow: 0 20px 40px rgba(255, 189, 176, 0.35);
-    border: 1px solid black;
-}
-
-.companies{
-    padding: 80px;
-}
-
-.companies h2{
-    width: 600px;
-    font-size: 27px;
-    font-weight: 700;
-    margin-bottom: 60px;
-}
-
-.company-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 40px;
-}
-
-.box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.box img{
-    max-width: 180px;
-    width: 100%;
-}
-
-.bigimage{
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(to right, blue, red);
-}
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <img src="co.jpg" alt="Logo">
+        </div>
 
-<header>
-    <img class="logo" src="co.jpg" alt="">
+        <nav>
+            <a href="#">About</a>
+            <a href="#">Programmes</a>
+            <a href="#">Admissions</a>
+            <a href="#">E-Portal</a>
+            <a href="#">News</a>
+            <a href="#">SQI Scholarship</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
 
-    <nav>
-        <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Programmes</a></li>
-            <li><a href="#">Admissions</a></li>
-            <li><a href="#">E-Portal</a></li>
-            <li><a href="#">SQI Scholarship</a></li>
-            <li><a href="#">News</a></li>
-        </ul>
-    </nav>
-</header>
+    <section class="hero">
 
-<section class="hero">
+        <div class="hero-text">
+            <h1>Study to <br>
+                 become a <br>
+                 global talent</h1>
 
-    <div class="hero-text">
-        <b><h1>
-            Study to <br>
-            become a <br>
-            global talent
-        </h1></b>
+            <p>
+                Learn new tech skills using a world-class curriculum from top <br>
+                 industry experts in an accredited institution.
+            </p>
 
-        <p class="p">
-            Learn new tech skills using a world-class curriculum from top industry experts in an accredited institution.
-        </p>
+            <button>Start Now</button>
+        </div>
 
-        <button>Start Now</button>
-    </div>
+        <div class="hero-image">
+            <img src="bg-header-sqi-1.png" alt="Student">
+        </div>
 
-    <div class="heroimg">
-        <img src="bg-header-sqi-1.png" alt="Students">
-    </div>
+    </section>
 
-</section>
+    <section class="program-section">
 
-<section class="second-section">
-    <h2>Start here. Change the world.</h2>
+        <h2>Start here. Change the world.</h2>
 
-    <div class="images">
-        <div class="image1">
-            <img src="college.jpg" alt="National Diploma">
-            <h3>National Diploma (ND)</h3>
-            <br>
-            The National Diploma (ND) offered at SQI College of ICT is a 2 year approved academic program of the National Board for Technical Education (NBTE) and approved by the Federal Ministry of Education.
-            <br><br><br>
-            <b><a href="#">Learn More</a></b>
-            <br><br><br><br><br><br>
-            <div class="container">
-                <div class="grid">
-                    <h3>NATIONAL DIPLOMA COURSES </h3>
-                    <div class="item"><strong>Duration:</strong> 2 Years</div>
-                    <div class="item"><strong>Certificate:</strong> Both National Diploma and Professional Diploma</div>
-                    <div class="item"><strong>Skills:</strong> Academic Institution recognized skills and In-demand professional skills.</div>
-                    <div class="item"><strong>Entry Requirements:</strong>120 min in JAMB, 5 Credits in O-Level and Your passion</div>
-                    <div class="item"><strong>Required Hardware:</strong>(usually laptop)</div>
-                    <div class="item"><strong>Direct Entry:</strong>Yes(any university)</div>
-                    <div class="item"><strong>Transcript & Internship:</strong>Yes</div>
-                </div>
+        <div class="programs">
+
+            <div class="cards">
+                <img src="college.jpg" alt="">
+                <h3>National Diploma (ND)</h3>
+                <p>
+                    The National Diploma (ND) offered at SQI <br>
+                     College of ICT is a 2 year approved <br>
+                      academic program of the National Board for <br>
+                       Technical Education (NBTE) and approved by <br>
+                        the Federal Ministry of Education
+                </p>
+                <a href="#">Learn More</a>
+                
             </div>
-            
-        </div>
 
-        <div class="image2">
-            <img src="prof.jpg" alt="Professional Diploma">
-            <h3>Professional Diploma Certificate</h3>
-            <br>
-            The Professional Certificate Program is 1 year practical training with wide range of edge-cutting IT certification courses offered in SQI College of ICT to people who want to advance their career.
-            <br><br><br>
-            <b><a href="#">Learn More</a></b>
-            <br><br><br><br><br><br>
-            <div class="container">
-                <div>
-                    <h3>PROFESSIONAL DIPLOMA COURSES</h3>
-                    <div class="item"><strong>Duration:</strong>12 Months Courses</div>
-                    <div class="item"><strong>Certificate:</strong>Professional Diploma</div>
-                    <div class="item"><strong>Skills:</strong>In-demand professional skills</div>
-                    <div class="item"><strong>Entry Requirements:</strong>Your passion</div>
-                    <div class="item"><strong>Required Hardware:</strong>(usually Laptop)</div>
-                    <div class="item"><strong>Transcript & Internship:</strong>Yes</div>
-                    <div class="item"><strong>Access to Alumni Network and Opportunities:</strong>Yes</div>
-                    <div class="item"><strong>Access to Credit Unit for Universities</strong></div>
-                </div>
-
+            <div class="cards">
+                <img src="prof.jpg" alt="">
+                <h3>Professional Diploma
+                    <br>Certificate
+                </h3>
+                <p>
+                    The Professional Certificate Program is 1 year <br> practical training with wide range of edge- <br> cutting IT certification courses offered in SQI <br> College of ICT to <br> people who want to advance their career.
+                </p>
+                <a href="#">Learn More</a>
             </div>
-        </div>
 
-        <div class="image3">
-            <img src="certificate.jpg" alt="Certificate Program">
-            <h3>Certificate Program</h3>
-            <br>
-            The Certificate Program is a short-term training, 2 weeks to 6 months with a wide range of edge-cutting IT certification courses offered in SQI College of ICT to people who want to advance their careers.
-            <br><br><br>
-            <b><a href="#">Learn More</a></b>
-            <br><br><br><br><br><br>
-            <div class="container">
-                <div>
-                    <h3>CERTIFICATE PROGRAM</h3>
-                    <div class="item"><strong>Duration:</strong>2 weeks to 10 months</div>
-                    <div class="item"><strong>Certificate:</strong>Certificate Program</div>
-                    <div class="item"><strong>Skills:</strong>In-demand professional skills</div>
-                    <div class="item"><strong>Entry Requirements:</strong>Your passion</div>
-                    <div class="item"><strong>Required Hardware:</strong>(usually Laptop)</div>
-                    <div class="item"><strong>Transcript & Internship:</strong>No</div>
-                    <div class="item"><strong>Access to Alumni Network and Opportunities:</strong>Yes</div>
-                </div>
+            <div class="cards">
+                <img src="certificate.jpg" alt="">
+                <h3>Certificate Program</h3>
+                <p>
+                    The Certificate Program is a short-term training, 2 weeks to <br> 6 months with a wide range of edge-cutting IT certification <br> courses offered in SQI College of ICT to people who want <br> to advance their careers.
+                </p>
+                <a href="#">Learn More</a>
             </div>
+
         </div>
-    </div>
-</section>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
- <section class="top-courses">
+        <br><br><br><br><br>
+<div class="container">
 
-    <div class="section-header">
-        <h1>Our Top Courses</h1>
-        <p>Take a look at some of our popular courses</p>
+    <div class="column">
+        <h2>NATIONAL DIPLOMA COURSES</h2>
 
-        <a href="#" class="view-courses">
-            View all Courses →
-        </a>
-    </div>
+        <div class="item"><span>Duration:</span> 2 Years</div>
 
-    <div class="courses-grid">
-
-        <div class="course-card blue-card1">
-            <img src="software-engineering-630x330-1.webp" alt="Software Engineering">
-
-            <h2>
-                Software Engineering
-                <span>(With Ai)</span>
-            </h2>
-
-            <p>
-                Software Engineering is one of the most in-demand jobs
-                across the globe today.
-            </p>
-
-            <p>
-                Software Engineers are also known as programmers,
-                developers or coders.
-            </p>
-
-            <a href="#">Learn More →</a>
+        <div class="item">
+            <span>Certificate:</span> Both National Diploma and <br> Professional Diploma.
         </div>
 
-        <div class="course-card yellow-card1">
-            <img src="DATA-SQI.jpg" alt="Data Science">
-
-            <h2>
-                Data Science & Analysis
-                <span>(With Ai)</span>
-            </h2>
-
-            <p>
-                The eruption of data is transforming individuals and
-                businesses.
-            </p>
-
-            <p>
-                Companies are now expecting their business decisions
-                to be based on data-led insight.
-            </p>
-
-            <a href="#">Learn More →</a>
+        <div class="item">
+            <span>Skills:</span> Academic Institution recognized <br> skills and In-demand professional <br> skills.
         </div>
 
-    </div>
-    <div class="courses-grid">
+        <div class="item">
+            <span>Entry Requirements:</span> 120 min in JAMB, <br> 5 Credits in O-Level and Your passion
+        </div>
 
-    <div class="course-card blue-card">
-        <img src="product.jpg" alt="UI/UX">
+        <div class="item">
+            <span>Required Hardware:</span> (usually Laptop)
+        </div>
 
-        <h2>
-            UI/UX - Product Design
-            <span>(With Ai)</span>
-        </h2>
+        <div class="item">
+            <span>Direct Entry:</span> Yes (Any University)
+        </div>
 
-        <p>
-            More than ever before individuals and businesses are relying
-            on digital products and services.
-        </p>
+        <div class="item">
+            <span>Transcript & Internship:</span> Yes
+        </div>
 
-        <p>
-            Making an intuitive digital product design is even more important.
-        </p>
-
-        <a href="#">Learn More →</a>
+        <div class="item last">
+            <span>Access to Alumni Network and <br> Opportunities:</span> Yes.
+        </div>
     </div>
 
-    <div class="course-card yellow-card">
-        <img src="digital-literacy.jpg" alt="Digital Workplace">
+    <div class="column">
+        <h2>PROFESSIONAL DIPLOMA COURSES</h2>
 
-        <h2>
-            Digital Workplace Proficiency
-            <span>(With Ai)</span>
-        </h2>
+        <div class="item"><span>Duration:</span> 12 Months Courses</div>
 
-        <p>
-            This course is designed to prepare you for success in a
-            modern world full of computers.
-        </p>
+        <div class="item"><span>Certificate:</span> Professional Diploma</div>
 
-        <p>
-            Learn about the technologies that drive our computerized society.
-        </p>
+        <div class="item"><span>Skills:</span> In-demand professional skills</div>
 
-        <a href="#">Learn More →</a>
+        <div class="item"><span>Entry Requirements:</span> Your passion</div>
+
+        <div class="item"><span>Required Hardware:</span> (usually Laptop)</div>
+
+        <div class="item"><span>Transcript & Internship:</span> Yes.</div>
+
+        <div class="item"><span>Access to Alumni Network and <br> Opportunities:</span> Yes.</div>
+
+        <div class="item">
+            <span>Access to Credit Unit for Universities</span>
+        </div>
+    </div>
+
+    <div class="column">
+        <h2>CERTIFICATE PROGRAM</h2>
+
+        <div class="item"><span>Duration:</span> 2 weeks to 10 months</div>
+
+        <div class="item"><span>Certificate:</span> Certificate Program</div>
+
+        <div class="item"><span>Skills:</span> In-demand professional skills</div>
+
+        <div class="item"><span>Entry Requirements:</span> Your passion</div>
+
+        <div class="item"><span>Required Hardware:</span> (usually Laptop)</div>
+
+        <div class="item"><span>Transcript & Internship:</span> No</div>
+
+        <div class="item last">
+            <span>Access to Alumni Network and <br> Opportunities:</span> Yes.
+        </div>
     </div>
 
 </div>
 
-</section>
 
+    </section>
+    <section class="courses">
+        <div class="left-side">
+    <div class="course-heading">
+        <h1>Our Top Courses</h1>
+        <p>Take a look at some of our popular courses</p>
+        <a href="#">View all Courses ></a>
+    </div>
+
+    <div class="course-card yellow">
+        <img src="DATA-SQI.jpg" alt="">
+        <h2>Data Science & Analysis <span>(With AI)</span></h2>
+        <p>
+            The eruption of data is transforming indiviuals and <br> businesses. Companies either big or small are now <br> expecting their business decisions to be based on <br> data-led insight. <br><br>
+Data specialists have a tremendous impact on…
+        </p>
+        <a href="#">Learn More ></a>
+    </div>
+
+    <div class="course-card blue">
+        <img src="software-engineering-630x330-1.webp" alt="">
+        <h2>Software Engineering <span>(With AI)</span></h2>
+        <p>
+            Software Engineering is one of the most in-demand jobs <br> across the globe today. <br>
+ <br>Software Engineers are also known as programmers, <br> developers or coders. They are the ones behind all the <br> apps and software you use today either on your ….
+        </p>
+        <a href="#">Learn More ></a>
+    </div>
+        </div>
+    <div class="right-side">
+    <div class="course-card cream">
+        <img src="product.jpg" alt="">
+        <h2>UI/UX - Product Design <span>(With AI)</span></h2>
+        <p>
+            More than ever before individuals and businesses are <br> relying on digital products and services. From online <br> meeting tools to finance, from e-commerce platforms <br> to healthcare and food apps. <br><br>
+Making an intuitive digital product design is even more <br> import at this time as it…
+        </p>
+        <a href="#">Learn More ></a>
+    </div>
+
+    <div class="course-card purple">
+        <img src="digital-literacy.jpg" alt="">
+        <h2>Digital Workplace <br> Proficiency <span>(With AI)</span></h2>
+        <p>
+            This course is designed to prepare you for success in a <br> modern world full of computers—not only the traditional <br> computers such as desktop and notebook PCs but also <br> computers that you interact with in other places too, <br> like your bank's ATM or your employer's computerized <br> cash register. <br><br>
+In this course, you will learn about the technologies that drive our computerized society…
+        </p>
+        <a href="#">Learn More ></a>
+    </div>
+    </div>
+    
+</section>
 <section class="companies">
     <h2>
         Our alumni work at world-class companies around the world including
     </h2>
 
-    <div class="company-container">
-        <div class="box"><img src="google.png" alt=""></div>
-        <div class="box"><img src="Interswitch.png" alt=""></div>
-        <div class="box"><img src="Andela-log-landscape-blue-400px.png" alt=""></div>
-        <div class="box"><img src="Microsoft_logo.png" alt=""></div>
+    <div class="logos">
+        <img src="google.png" alt="">
+        <img src="Interswitch.png" alt="">
+        <img src="Andela-log-landscape-blue-400px.png" alt="">
+        <img src="Microsoft_logo.png" alt="">
 
-        <div class="box"><img src="Paystack.png" alt=""></div>
-        <div class="box"><img src="brewery.png" alt=""></div>
-        <div class="box"><img src="Wema-Bank-Logo.png" alt=""></div>
-        <div class="box"><img src="clan-logo.png" alt=""></div>
+        <img src="Paystack.png" alt="">
+        <img src="brewery.png" alt="">
+        <img src="Wema-Bank-Logo.png" alt="">
+        <img src="clan-logo.png" alt="">
 
-        <div class="box"><img src="edozzier.png" alt=""></div>
-        <div class="box"><img src="moneymie.png" alt=""></div>
-        <div class="box"><img src="Nigerian_Army.png" alt=""></div>
-        <div class="box"><img src="aella-credit.png" alt=""></div>
+        <img src="edozzier.png" alt="">
+        <img src="moneymie.png" alt="">
+        <img src="Nigerian_Army.png" alt="">
+        <img src="aella-credit.png" alt="">
     </div>
 </section>
-<img class="bigimage" src="DSC_9054-scaled.jpg" alt="">
+<section class="tour">
+
+    <div class="video">
+
+        <iframe
+            width="400"
+            height="250"
+            src="https://www.youtube.com/embed/HgC6bjMbqpw?si=MPa4bGBkbsoTftc4"
+            title="Campus Tour"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+    <div class="tour-text">
+        <h1>Take a Tour</h1>
+
+        <p>
+            Our campus is a living centre for innovation and creativity for sustainability. We love showing students our campus and allowing them to see, hear and feel the excitement that comes with being part of the Central community which is an atmosphere that is open-minded, always exciting, and filled with academic excellence.
+        </p>
+        <br><br>
+        <button class="b">Apply Now</button>
+    </div>
+
+</section>
+<section class="why-sqi">
+
+    <div class="content">
+
+        <h1>Why study at SQI?</h1>
+
+        <div class="features">
+
+            <div class="box">
+                <h3>Project Based Learning</h3>
+                <p>
+                    Our courses are practical, hands-on learning.
+                    Practice and apply knowledge with real world projects.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Expert Instructors</h3>
+                <p>
+                    Get to interact with different mentors and draw from
+                    their loads of experience.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Physical & Virtual Class</h3>
+                <p>
+                    Learn from anywhere in the world through physical
+                    and online classes.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Free access to our hub and community</h3>
+                <p>
+                    Access our fully functional hub for co-working,
+                    projects and assignments.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Certification</h3>
+                <p>
+                    Be certified by an accredited and globally
+                    recognized institution.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Alumni Support</h3>
+                <p>
+                    Connect with alumni working in top organizations.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Job Opportunity</h3>
+                <p>
+                    Students move from learning to getting jobs.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Access to study materials</h3>
+                <p>
+                    Access videos and resources to strengthen learning.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="image-side">
+        <img src="conference_image_15.jpg" alt="">
+    </div>
+
+</section>
+<section class="faq-section">
+
+    <div class="faq-left">
+        <p>FAQ</p>
+        <h1>Frequently Asked Questions</h1>
+
+        <a href="#">Contact Us</a>
+    </div>
+
+    <div class="faq-right">
+
+        <div class="question">
+            <h3>How do I get into the college</h3>
+            <p>
+                We currently have 3 modes of study at SQI College of ICT,
+                the National Diploma, Professional Diploma Certificate,
+                and Ordinary Professional Certificate Program.
+            </p>
+        </div>
+
+        <div class="question">
+            <h3>How much is the tuition?</h3>
+        </div>
+
+        <div class="question">
+            <h3>Are your classes physical or virtual</h3>
+        </div>
+
+        <div class="question">
+            <h3>Will I get a job after my training?</h3>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="ready">
+
+    <p class="small">
+        IT'S TIME FOR YOU TO TAKE YOUR TECH CAREER TO THE NEXT LEVEL
+    </p>
+
+    <h1>Ready to Get Started?</h1>
+
+    <p>
+        We provide and lead others in quality education, service, industry, and <br> character as well as discipline.
+    </p>
+
+    <p>
+        Lagos • Abuja • Ibadan • Abeokuta • Ogbomosho • Osogbo • Virtual
+    </p>
+
+    <button>Join Us Today</button>
+
+</section>
+<section class="news">
+
+    <div class="news-header">
+
+        <h1>Latest News</h1>
+
+        <button>Read More</button>
+
+    </div>
+
+    <div class="news-cards">
+
+        <div class="card">
+
+            <img src="SQI1816-400x250.jpg" alt="">
+
+            <div class="card-content">
+
+                <h3>
+                    SQI COLLEGE OF ICT ANNOUNCES
+                    2026/2027 POST-UTME SCREENING EXERCISE
+                </h3>
+
+                <p class="date">Jun 2, 2026</p>
+
+                <p>
+                    Dreaming of a future in tech? SQI College of ICT is now accepting applications for its 2026/2027 Post-UTME and Direct Entry screening with opportunities open to candidates who scored 100 and above, including those changing institutions via Joint Admissions and Matriculation Board…
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="IMG-20250712-WA0024-400x250.jpg" alt="">
+
+            <div class="card-content">
+
+                <h3>
+                    SQI College of ICT Partners with University
+                </h3>
+
+                <p class="date">Feb 13, 2026</p>
+
+                <p>
+                    SQI College of ICT is pleased to formally announce a strategic academic collaboration with Ladoke Akintola University of Technology (LAUTECH) for the support and coordination of selected LAUTECH Part-Time Degree Programmes.This collaboration will operate at: SQI...
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="SQI4348-convocation-400x250.jpg" alt="">
+
+            <div class="card-content">
+
+                <h3>
+                    SQI College of ICT Holds First Convocation
+                </h3>
+
+                <p class="date">Nov 22, 2025</p>
+
+                <p>
+                    SQI College of ICT, Ogbomoso, marked a landmark achievement on Saturday, 22nd November 2025, as the institution held its maiden Convocation Ceremony at its main campus along Old Ilorin Road, Ogbomoso. The event, which drew dignitaries from across Nigeria's academic...
 
 
+                </p>
 
+            </div>
 
+        </div>
+
+    </div>
+
+</section>
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-column">
+
+            <h2>Hello, we're SQI College of ICT</h2>
+
+            <p>
+                We provide and lead others in quality ICT education.
+            </p>
+
+            <h3>Send us a mail</h3>
+
+            <p>enquiry@sqi.edu.ng</p>
+            <p>admissions@sqi.edu.ng</p>
+            <p>examandrecords@sqi.edu.ng</p>
+            <p>rector@sqi.edu.ng</p>
+            <p>partnerships@sqi.edu.ng</p>
+            <p>internships@sqi.edu.ng</p>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>Quick Links</h3>
+
+            <p>Application Portal</p>
+            <p>Student Portal</p>
+            <p>Professional Courses</p>
+            <p>ND Courses</p>
+            <p>Campus Info</p>
+            <p>Accommodation</p>
+            <p>SQI Scholarship</p>
+            <p>SQI Anthem</p>
+            <p>Donate</p>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>Ogbomoso</h3>
+
+            <p>Old Ilorin Road, Opposite Yoaco Filling Station.</p>
+
+            <h4>0906 281 9991</h4>
+
+            <a href="#">Locate on the map</a>
+
+            <h3>Lagos</h3>
+
+            <p>Suite 219, Opic Plaza, Mobolaji Bank Anthony Way.</p>
+
+            <h4>0906 281 9999</h4>
+
+            <a href="#">Locate on the map</a>
+
+            <h3>Virtual</h3>
+
+            <p>Available Globally Online.</p>
+
+            <h4>0906 281 9992</h4>
+
+            <a href="#">Locate on the map</a>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>Ibadan</h3>
+
+            <p>First Floor, H25 Heritage Mall, Dugbe.</p>
+
+            <h4>0906 281 9994</h4>
+
+            <a href="#">Locate on the map</a>
+
+            <p>Christianah Oyinade Ajoke House.</p>
+
+            <h4>0906 281 9995</h4>
+
+            <a href="#">Locate on the map</a>
+
+            <p>Haier Thermocool Building.</p>
+
+            <h4>0906 281 9992</h4>
+
+            <a href="#">Locate on the map</a>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>Abeokuta</h3>
+
+            <p>OPIC Tower Building, Okeilewo.</p>
+
+            <h4>0906 281 9996</h4>
+
+            <a href="#">Locate on the map</a>
+
+            <h3>Osogbo</h3>
+
+            <p>Opposite Jaiz Bank, Ogo-Oluwa.</p>
+
+            <h4>0906 281 9997</h4>
+
+            <a href="#">Locate on the map</a>
+
+            <h3>Abuja</h3>
+
+            <p>Suite Banking Hall SF, Febson Mall.</p>
+
+            <h4>090 628 20000</h4>
+
+            <a href="#">Locate on the map</a>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        Copyright © 2026 | SQI ICT Consultants | Powered by Edozzier
+    </div>
+
+</footer>
 
 </body>
 </html>
